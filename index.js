@@ -11,7 +11,7 @@ app.get('/api/:date', function(req,res) {
 	var naturalDate = months[newDate.getMonth()] + " " + newDate.getDate() + ", "  + newDate.getFullYear();
 	var millisecs = newDate.getTime()/1000;
  	if (!isNaN(millisecs)) {
- 		var response = JSON.stringify({unix: millisecs, natural: naturalDate});
+ 		var response = {"unix": millisecs, "natural": naturalDate};
  		res.send(response);
  	} else {
  		var response = JSON.stringify({unix: "null", natural: "null"});
