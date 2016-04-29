@@ -1,0 +1,21 @@
+{
+  "name": "timestampah",
+  "version": "1.0.0",
+  "description": "timestamping microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Allan Armstrong",
+  "license": "ISC",
+
+  "devDependencies": {
+    "express": "^4.13.4"
+  },
+
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+
+}
